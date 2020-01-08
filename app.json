@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/musicList/musicList",
+    "pages/audioPage/audioPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EA584F",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

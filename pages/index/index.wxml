@@ -1,0 +1,20 @@
+
+
+<!--顶部搜索-->
+<view class="container">
+  <view class='indextop'>
+      <view class='topSearch'>
+    <navigator class='topsearchLeft' url='../search/search'>
+      <view class='iconfont icon-sousuo sousuo'></view>
+      <text>搜索</text>
+    </navigator>
+  </view>
+</view>
+    <import src="./template/boutiqueItem" />
+    <view class='BoutiqueList'>
+      <block wx:for="{{musicList}}" wx:key="index">
+        <template is="ListItem" data="{{item}}" />
+      </block>
+    </view>
+  
+</view>

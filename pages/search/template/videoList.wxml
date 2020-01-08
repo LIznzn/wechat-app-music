@@ -1,0 +1,16 @@
+<wxs src="../../../utils/filter.wxs" module="filter" />
+<template name="videoList">
+  <view class='mvsItem' bindtap='govideoDetai' data-id='{{item.id}}'>
+    <view class='mvsLeft'>
+      <image lazy-load src='{{item.cover}}'></image>
+      <view class='mvsplayCount'>
+        <view class='iconfont icon-shipin4 icon'></view>
+        <text>{{filter.over10000(item.playCount)}}</text>
+      </view>
+    </view>
+    <view class='mvsRight'>
+      <view class='mvsRight_name'>{{item.name}}</view>
+      <view class='mvsRight_info'>{{filter.formatmusicTime(item.duration/1000)}}，by {{item.artistName}}</view>
+    </view>
+  </view>
+</template>
